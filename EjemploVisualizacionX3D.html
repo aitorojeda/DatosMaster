@@ -1,0 +1,107 @@
+<html> 
+   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+     <title>My first X3DOM page</title> 
+     <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'> </script> 
+     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css'></link> 
+   </head> 
+   <body> 
+     <h1>Ejemplo X3D</h1> 
+     <p> 
+       Ejemplo de una molécula de metano (CH4) con X3D 
+     </p> 
+	 <x3d width='700px' height='600px'> 
+	   <scene>
+		<!-- Escena principal - Atomo carbono -->    
+		<shape> 
+		   <appearance> 
+			 <material diffuseColor='1 0 0'></material> 
+		   </appearance> 
+		   <sphere radius='1'></sphere>  
+		</shape>
+		<!-- Cilindro 1 (Izq)--> 
+		<transform translation='-1.22 -0.8 0.2' >
+		<transform rotation=' 0 0 1 -1'>
+		  <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 0 1'></material> 
+			 </appearance> 
+			 <cylinder radius='0.2' height='1'></cylinder>
+		  </shape>
+		</transform> 
+		</transform>
+		<!-- Cilindro 2 (Der)-->  
+		<transform translation='1.22 -0.8 0' >
+		<transform rotation=' 0 0 1 1'>
+		  <shape> 
+			 <appearance> 
+			   <material diffuseColor='0 0 1'></material> 
+			 </appearance> 
+			 <cylinder radius='0.2' height='1'></cylinder>
+		  </shape>
+		</transform> 
+		</transform>
+		<!-- Cilindro 3 (Arriba)--> 
+		<transform translation='0 1.45 0' >
+		<transform rotation=' 0 1 0 1.57'>
+			<shape> 
+			 <appearance> 
+				<material diffuseColor='0 0 1'></material> 
+			</appearance> 
+			<cylinder radius='0.2' height='1'></cylinder>
+			</shape>
+			</transform> 
+			</transform>
+		<!-- Cilindro 4 (Abajo)-->
+		<transform translation='0 -1 -1.1' >
+		<transform rotation=' 0 1 0 1.57'>
+		<transform rotation=' 0 0 1 0.8'>
+			<shape> 
+				<appearance> 
+					<material diffuseColor='0 0 1'></material> 
+				</appearance> 
+				<cylinder radius='0.2' height='1'></cylinder>
+			</shape>
+		</transform> 
+		</transform>
+		</transform>
+		<!-- Atomo H 1 (Der)-->
+		<transform translation='1.8 -1.2 0' >
+			  <shape> 
+				 <appearance> 
+				   <material diffuseColor='1 1 2'></material> 
+				 </appearance> 
+				 <sphere radius='0.4'></sphere>
+			  </shape>
+			</transform>
+		<!-- Atomo H 2 (Izq)-->
+		<transform translation='-1.8 -1.2 0.2' >
+			<shape> 
+				<appearance> 
+					<material diffuseColor='1 1 2'></material> 
+				</appearance> 
+				<sphere radius='0.4'></sphere>
+			</shape>
+		</transform>
+		<!-- Atomo H 3 (Arriba)-->
+		<transform translation='0 2 0' >
+			<shape> 
+				<appearance> 
+					<material diffuseColor='1 1 2'></material> 
+				</appearance> 
+				<sphere radius='0.4'></sphere>
+			</shape>
+		</transform>
+		<!-- Atomo H 3 (Abajo)-->
+		<transform translation='0 -1.5 -1.6' >
+			<shape> 
+				<appearance> 
+					<material diffuseColor='1 1 2'></material> 
+				</appearance> 
+				<sphere radius='0.4'></sphere>
+			</shape>
+		</transform>	    
+	   </scene> 
+	</x3d> 
+   </body> 
+</html> 
